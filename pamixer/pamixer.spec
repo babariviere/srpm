@@ -1,6 +1,6 @@
 Name: pamixer
 Version: 1.3.1
-Release:2
+Release:3
 Summary: pamixer is like amixer but for pulseaudio
 
 License: GPLv3
@@ -28,21 +28,25 @@ cd pamixer
 
 %install
 cd pamixer
-%make_install
+mkdir -p %{buildroot}/usr/bin
+/usr/bin/make install PREFIX=%{buildroot}/usr
 
 
 %check
 
 
 %files
-/usr/local/bin/pamixer
+%{_bindir}/pamixer
 
 %changelog
-* Mon Apr 10 2017 notkild <notkild@gmail.com> 1.3.1-2
+* Mon Apr 10 2017 notkild <notkild@gmail.com> 1.3.1-3
 - 
 
+* Mon Apr 10 2017 notkild <notkild@gmail.com> 1.3.1-2
+-
+
 * Mon Apr 10 2017 notkild <notkild@gmail.com>
-- 
+-
 
 * Mon Apr 10 2017 notkild <notkild@gmail.com> 1.3.1-1
 - new package built with tito
