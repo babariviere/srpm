@@ -1,6 +1,6 @@
 Name: light
 Version: 1.0
-Release: 4
+Release: 5
 Summary: Light is a program to control backlight controllers under GNU/Linux, it is the successor of lightscript, which was a bash script with the same purpose, and tries to maintain the same functionality.
 
 License: GPLv3
@@ -18,7 +18,7 @@ rm -rf light
 git clone https://github.com/haikarainen/light --branch v%{version}
 cd light
 sed '/chown/d' Makefile > Makefile.tmp
-sed '/chmod/d' Makefile.tmp > Makefile
+mv -f Makefile.tmp Makefile
 
 
 %build
@@ -39,8 +39,11 @@ cd light
 %{_mandir}/man1/*
 
 %changelog
-* Mon Apr 10 2017 notkild <notkild@gmail.com> 1.0-4
+* Mon Apr 10 2017 notkild <notkild@gmail.com> 1.0-5
 - 
+
+* Mon Apr 10 2017 notkild <notkild@gmail.com> 1.0-4
+-
 
 * Mon Apr 10 2017 notkild <notkild@gmail.com> 1.0-3
 -
