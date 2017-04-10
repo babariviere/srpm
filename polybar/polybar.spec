@@ -6,7 +6,7 @@ Summary: A fast and easy-to-use tool for creating status bars.
 License: MIT
 URL: https://github.com/jaagr/polybar
 
-BuildRequires: git clang cmake cairo-devel git jsoncpp-devel libxcb-devel python2 xcb-proto xcb-util-image-devel xcb-util-wm-devel xcb-util-xrm-devel wireless-tools-devel libmpdclient-devel libcurl-devel alsa-lib-devel
+BuildRequires: git clang cmake cairo-devel git jsoncpp-devel libxcb-devel python2 xcb-proto xcb-util-image-devel xcb-util-wm-devel xcb-util-xrm-devel wireless-tools-devel libmpdclient-devel libcurl-devel alsa-lib-devel i3
 Requires: cairo libxcb python2 xcb-proto xcb-util-image xcb-util-wm xcb-util-xrm jsoncpp
 
 %description
@@ -31,7 +31,16 @@ cd polybar/build
 
 %changelog
 * Mon Apr 10 2017 notkild <notkild@gmail.com> 3.0.5-1
+- new package built with tito
+
+* Mon Apr 10 2017 notkild <notkild@gmail.com>
 - 
+
+* Mon Apr 10 2017 notkild <notkild@gmail.com>
+-
+
+* Mon Apr 10 2017 notkild <notkild@gmail.com> 3.0.5-1
+-
 
 * Mon Apr 10 2017 notkild <notkild@gmail.com>
 -
