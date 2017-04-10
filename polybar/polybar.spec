@@ -1,6 +1,6 @@
 Name: polybar
 Version: 3.0.5
-Release: 1%{?dist}
+Release: 2
 Summary: A fast and easy-to-use tool for creating status bars.
 
 License: MIT
@@ -26,15 +26,28 @@ make
 %install
 cd polybar/build
 %make_install
+%check
 
 %files
+/usr/local/bin/polybar
+/usr/local/bin/polybar-msg
+/usr/local/share/doc/polybar/config
+/usr/local/share/man/man1/polybar.1
+/usr/local/share/zsh/site-functions/_polybar
+/usr/local/share/zsh/site-functions/_polybar_msg
 
 %changelog
+* Mon Apr 10 2017 notkild <notkild@gmail.com> 3.0.5-2
+- 
+
+* Mon Apr 10 2017 notkild <notkild@gmail.com>
+- 
+
 * Mon Apr 10 2017 notkild <notkild@gmail.com> 3.0.5-1
 - new package built with tito
 
 * Mon Apr 10 2017 notkild <notkild@gmail.com>
-- 
+-
 
 * Mon Apr 10 2017 notkild <notkild@gmail.com>
 -
