@@ -1,6 +1,6 @@
 Name: polybar
-Version: 3.0.6
-Release:        1%{?dist}
+Version: 3.0.5
+Release: 1%{?dist}
 Summary: A fast and easy-to-use tool for creating status bars.
 
 License: MIT
@@ -30,6 +30,12 @@ cd polybar/build
 %files
 
 %changelog
+* Mon Apr 10 2017 notkild <notkild@gmail.com> 3.0.5-1
+- 
+
+* Mon Apr 10 2017 notkild <notkild@gmail.com>
+-
+
 * Mon Apr 10 2017 notkild <notkild@gmail.com> 3.0.6-1
 - new package built with tito
 
