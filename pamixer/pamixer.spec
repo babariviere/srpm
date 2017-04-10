@@ -1,12 +1,13 @@
 Name: pamixer
 Version: 1.3.1
-Release:1%{?dist}
+Release:2
 Summary: pamixer is like amixer but for pulseaudio
 
 License: GPLv3
 URL: https://github.com/cdemoulins/pamixer
 
 BuildRequires: boost-devel
+BuildRequires: git
 BuildRequires: glibc-common
 BuildRequires: pulseaudio-libs-devel
 Requires: boost-program-options
@@ -37,6 +38,12 @@ cd pamixer
 /usr/local/bin/pamixer
 
 %changelog
+* Mon Apr 10 2017 notkild <notkild@gmail.com> 1.3.1-2
+- 
+
+* Mon Apr 10 2017 notkild <notkild@gmail.com>
+- 
+
 * Mon Apr 10 2017 notkild <notkild@gmail.com> 1.3.1-1
 - new package built with tito
 
